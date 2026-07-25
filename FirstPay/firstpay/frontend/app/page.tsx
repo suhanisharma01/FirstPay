@@ -138,8 +138,17 @@ export default function Home() {
     </main>
   );
 }
-
-function Input({ label, value, onChange, type = "text" }: any) {
+function Input({
+  label,
+  value,
+  onChange,
+  type = "text",
+}: {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+  type?: string;
+}) {
   return (
     <label className="block">
       <span className="text-sm text-gray-600">{label}</span>
@@ -148,13 +157,21 @@ function Input({ label, value, onChange, type = "text" }: any) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         required
-        className="w-full bg-emerald-600 hover:bg-emerald-700 text-white rounded py-2 disabled:opacity-50 transition-colors"
+        className="w-full border rounded px-3 py-2 mt-1"
       />
     </label>
   );
 }
 
-function Slider({ label, value, onChange }: any) {
+function Slider({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: number;
+  onChange: (value: number) => void;
+}) {
   return (
     <label className="block">
       <span className="text-sm text-gray-600">

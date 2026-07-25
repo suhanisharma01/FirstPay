@@ -89,7 +89,7 @@ function DashboardContent() {
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip formatter={(v: number) => `$${v.toFixed(2)}`} />
+              <Tooltip formatter={(v) => `$${Number(v).toFixed(2)}`} />
               <Legend />
             </PieChart>
           </ResponsiveContainer>
