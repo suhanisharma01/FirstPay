@@ -1,0 +1,38 @@
+# FirstPay Python dependencies
+# Recommended runtime: Python 3.11+
+# Frontend dependencies are managed separately in frontend/package.json.
+
+# API and application configuration
+fastapi>=0.139,<1.0
+uvicorn[standard]>=0.35,<1.0
+pydantic>=2.11,<3.0
+pydantic-settings>=2.10,<3.0
+python-multipart>=0.0.20,<1.0
+orjson>=3.10,<4.0
+
+# Supabase database, authentication, and storage client
+supabase>=2.31,<3.0
+httpx>=0.28,<1.0
+
+# PDF extraction and OCR
+PyMuPDF>=1.28,<2.0
+pdfplumber>=0.11,<1.0
+pytesseract>=0.3.13,<1.0
+Pillow>=11,<13
+
+# Transaction parsing and data processing
+pandas>=2.3,<4.0
+numpy>=2.2,<3.0
+python-dateutil>=2.9,<3.0
+rapidfuzz>=3.13,<4.0
+
+# Machine learning and model persistence
+scikit-learn>=1.9,<2.0
+joblib>=1.5,<2.0
+
+# Testing and code quality
+pytest>=8.4,<9.0
+pytest-asyncio>=1.1,<2.0
+pytest-cov>=6.2,<8.0
+ruff>=0.12,<1.0
+mypy>=1.17,<2.0
