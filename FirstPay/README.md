@@ -23,7 +23,7 @@ Activate venv:
 
 back end - http://127.0.0.1:8000/docs to run: uvicorn main:app in backend folder
 front end - http://localhost:3000/  to run: npm run dev in front end folder
-
+Live app - https://first-pay-nine.vercel.app/
 ## Tech stack
 
 **Frontend**: Next.js, React, TypeScript, Tailwind CSS, Recharts
